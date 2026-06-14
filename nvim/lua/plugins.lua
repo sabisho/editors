@@ -3,7 +3,7 @@ vim.pack.add {
   'https://github.com/f4z3r/gruvbox-material.nvim',
   'https://github.com/folke/snacks.nvim',
   'https://github.com/folke/which-key.nvim',
-  'https://github.com/nvim-mini/mini.nvim'
+  'https://github.com/nvim-mini/mini.nvim',
   -- 'https://github.com/nvim-mini/mini-ai',
   -- 'https://github.com/nvim-mini/mini-icons',
   -- 'https://github.com/nvim-mini/mini-notify',
