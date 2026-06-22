@@ -1,0 +1,53 @@
+theme = "gruvbox-transparent"
+
+[editor]
+rainbow-brackets = true
+line-number = "relative"
+mouse = false
+color-modes = true
+bufferline = "multiple"
+popup-border = "all"
+cursorline = true
+end-of-line-diagnostics = "hint"
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "file-name", "file-modification-indicator"]
+center = ["spinner", "file-type"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[keys.insert]
+"C-[" = "normal_mode"
+
+[keys.normal]
+ret = "goto_word"
+
+[keys.normal."space"]
+n = ":open ~/nixdots"
+
+[keys.normal."["]
+s = "@mim<A-s><A-,>(<A-,>:sort -i<ret>,;mm"
+n = "@<A-s>I<C-r>#.<space><esc>"
+
+[keys.normal."]"]
+s = "@mim<A-s><A-,>(<A-,>:sort -i -r<ret>,;mm"
